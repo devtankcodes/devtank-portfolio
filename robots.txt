@@ -1,0 +1,10 @@
+# ==========================================
+# robots.txt
+# Dev Tank Portfolio
+# ==========================================
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://devtankcodes.github.io/devtank-portfolio/sitemap.xml

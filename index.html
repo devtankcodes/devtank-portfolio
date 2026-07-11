@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character encoding & viewport (must be first) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Primary SEO -->
+    <title>Dev Tank | Portfolio | Computer Engineering Student & Frontend Developer</title>
+    <meta name="title" content="Dev Tank | Portfolio | Computer Engineering Student & Frontend Developer">
+    <meta name="description" content="Official portfolio of Dev Tank, a Computer Engineering student passionate about Frontend Web Development, UI/UX, and Software Engineering.">
+    <meta name="keywords" content="Dev Tank, Portfolio, Frontend Developer, Computer Engineering Student, HTML, CSS, JavaScript, GitHub">
+    <meta name="author" content="Dev Tank">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://devtankcodes.github.io/devtank-portfolio/">
+
+    <!-- Favicons (relative paths) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devtankcodes.github.io/devtank-portfolio/">
+    <meta property="og:title" content="Dev Tank | Portfolio | Computer Engineering Student & Frontend Developer">
+    <meta property="og:description" content="Official portfolio of Dev Tank, a Computer Engineering student passionate about Frontend Web Development, UI/UX, and Software Engineering.">
+    <meta property="og:image" content="https://devtankcodes.github.io/devtank-portfolio/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dev Tank Portfolio Preview">
+    <meta property="og:site_name" content="Dev Tank | Portfolio">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://devtankcodes.github.io/devtank-portfolio/">
+    <meta name="twitter:title" content="Dev Tank | Portfolio | Computer Engineering Student & Frontend Developer">
+    <meta name="twitter:description" content="Official portfolio of Dev Tank, a Computer Engineering student passionate about Frontend Web Development, UI/UX, and Software Engineering.">
+    <meta name="twitter:image" content="https://devtankcodes.github.io/devtank-portfolio/assets/images/og-image.png">
+
+    <!-- Performance: preconnect (only for what you actually use) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preload" href="assets/images/Dev_Passport_Size_Photo_Webp.webp" as="image" type="image/webp">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS: bundle these into one minified file for production -->
+    <link rel="stylesheet" href="src/assets/css/style.min.css">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dev Tank",
+        "url": "https://devtankcodes.github.io/devtank-portfolio/",
+        "jobTitle": "Computer Engineering Student & Frontend Developer",
+        "description":"Frontend Web Developer passionate about creating modern, responsive and user-friendly websites.",
+        "knowsAbout":[
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Responsive Web Design",
+            "Git",
+            "GitHub",
+            "Frontend Development"
+        ],
+        "sameAs": [
+        "https://github.com/devtankcodes/",
+        "https://linkedin.com/in/devtankengineer/",
+        ]
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+
+            <!-- Logo -->
+            <a href="#home" class="logo" aria-label="Dev Tank Home">
+                <span class="logo__text">Dev Tank</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav class="nav" id="nav" aria-label="Primary Navigation">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active" aria-current="page">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">Education</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header__actions">
+
+                <!-- Resume Button -->
+                <a href="assets/files/Dev_Tank_Resume.pdf" class="btn btn--primary" target="_blank"
+                    rel="noopener noreferrer" aria-label="Open resume PDF in new tab">
+                    Resume
+                </a>
+
+                <!-- Mobile Menu -->
+                <button class="nav__toggle" id="navToggle" aria-label="Toggle Navigation" aria-expanded="false"
+                    aria-controls="nav">
+                    <span class="nav__toggle-bar"></span>
+                    <span class="nav__toggle-bar"></span>
+                    <span class="nav__toggle-bar"></span>
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero__container">
+
+                <!-- Hero Content -->
+                <div class="hero__content">
+
+                    <p class="hero__subtitle">
+                        👋 Hello, I'm
+                    </p>
+
+                    <h1 class="hero__title">
+                        Dev <span>Tank</span>
+                    </h1>
+
+                    <h2 class="hero__designation">
+                        Computer Engineering Student & Frontend Web Developer
+                    </h2>
+
+                    <p class="hero__description">
+                        Passionate about building fast, responsive, and user-friendly websites
+                        using modern web technologies. Currently learning JavaScript, React,
+                        Data Structures & Algorithms, and software engineering principles.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="hero__buttons">
+
+                        <a href="#projects" class="btn btn--primary">
+                            <i class="fa-solid fa-folder-open"></i>
+                            View Projects
+                        </a>
+
+                        <a href="assets/files/Dev_Tank_Resume.pdf" class="btn btn--secondary" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            Resume
+                        </a>
+
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="hero__social">
+
+                        <a href="https://github.com/devtankcodes/" class="btn btn--outline" target="_blank" aria-label="GitHub"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/devtankengineer/" class="btn btn--outline" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Hero Image -->
+                <div class="hero__image">
+                    <div class="hero__image-wrapper">
+                        <img src="src/assets/images/Dev_Passport_Size_Photo_Webp.webp" alt="Portrait of Dev Tank" class="hero__profile-image" fetchpriority="high" width="500" height="500">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+
+                <!-- Section Header -->
+                <div class="section-heading">
+
+                    <p class="section-heading__subtitle">
+                        Get To Know Me
+                    </p>
+
+                    <h2 class="section-heading__title">
+                        About Me
+                    </h2>
+
+                    <p class="section-heading__description">
+                        A passionate Computer Engineering student with a strong interest in
+                        frontend development, UI/UX, and modern web technologies.
+                    </p>
+
+                </div>
+
+                <div class="about__content">
+
+                    <!-- About Text -->
+                    <div class="about__text">
+
+                        <p>
+                            Hello! I'm <strong>Dev Tank</strong>, a Computer Engineering student
+                            from Rajkot, Gujarat, India. I enjoy transforming ideas into
+                            beautiful, responsive, and user-friendly websites using modern web
+                            technologies.
+                        </p>
+
+                        <p>
+                            I continuously improve my skills by building real-world projects,
+                            exploring new technologies, and writing clean, maintainable code.
+                            My goal is to become a skilled Software Engineer and contribute to
+                            impactful products that solve real problems.
+                        </p>
+
+                        <p>
+                            Outside of coding, I enjoy learning about technology, open-source
+                            development, artificial intelligence, and software engineering
+                            best practices.
+                        </p>
+
+                    </div>
+
+                    <!-- About Highlights -->
+                    <div class="about__cards">
+
+                        <article class="about-card">
+                            <h3>🎓 Education</h3>
+                            <p>Computer Engineering Student</p>
+                        </article>
+
+                        <article class="about-card">
+                            <h3>💻 Interests</h3>
+                            <p>Frontend Development & UI/UX</p>
+                        </article>
+
+                        <article class="about-card">
+                            <h3>🚀 Goal</h3>
+                            <p>Become a Software Engineer</p>
+                        </article>
+
+                        <article class="about-card">
+                            <h3>📍 Location</h3>
+                            <p>Rajkot, Gujarat, India</p>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+
+                <!-- Section Heading -->
+                <div class="section-heading">
+
+                    <p class="section-heading__subtitle">
+                        What I Know
+                    </p>
+
+                    <h2 class="section-heading__title">
+                        Skills & Technologies
+                    </h2>
+
+                    <p class="section-heading__description">
+                        Technologies I use, tools I'm familiar with, and the skills I'm
+                        currently developing throughout my learning journey.
+                    </p>
+
+                </div>
+
+                <div class="skills__grid">
+
+                    <!-- Languages -->
+                    <article class="skill-card">
+
+                        <h3 class="skill-card__title">
+                            💻 Programming Languages
+                        </h3>
+
+                        <ul class="skill-card__list">
+                            <li>C</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+                    </article>
+
+                    <!-- Frontend -->
+                    <article class="skill-card">
+
+                        <h3 class="skill-card__title">
+                            🎨 Frontend Development
+                        </h3>
+
+                        <ul class="skill-card__list">
+                            <li>Responsive Design</li>
+                            <li>Flexbox</li>
+                            <li>CSS Grid</li>
+                            <li>DOM Manipulation</li>
+                            <li>Accessibility Basics</li>
+                        </ul>
+
+                    </article>
+
+                    <!-- Tools -->
+                    <article class="skill-card">
+
+                        <h3 class="skill-card__title">
+                            🛠️ Tools & Platforms
+                        </h3>
+
+                        <ul class="skill-card__list">
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>VS Code</li>
+                            <li>Canva</li>
+                            <li>GitHub Pages</li>
+                        </ul>
+
+                    </article>
+
+                    <!-- Learning -->
+                    <article class="skill-card">
+
+                        <h3 class="skill-card__title">
+                            📚 Currently Learning
+                        </h3>
+
+                        <ul class="skill-card__list">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Data Structures & Algorithms</li>
+                            <li>Java</li>
+                            <li>Software Engineering</li>
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+
+            <div class="container">
+
+                <!-- Section Heading -->
+                <div class="section-heading">
+
+                    <p class="section-heading__subtitle">
+                        My Work
+                    </p>
+
+                    <h2 class="section-heading__title">
+                        Featured Projects
+                    </h2>
+
+                    <p class="section-heading__description">
+                        A selection of projects that showcase my skills in frontend development,
+                        responsive design, and problem-solving.
+                    </p>
+
+                </div>
+
+                <div class="projects__grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card featured">
+
+                        <div class="project-card__image">
+
+                            <img src="assets/images/projects/shree-chamatkarik-dham.webp"
+                                alt="Shree Chamatkarik Dham Website">
+
+                            <span class="project-card__badge">
+                                Featured
+                            </span>
+
+                        </div>
+
+                        <div class="project-card__content">
+
+                            <h3 class="project-card__title">
+                                Shree Chamatkarik Dham Website
+                            </h3>
+
+                            <p class="project-card__description">
+                                A modern, responsive website developed for a Hindu temple with
+                                live darshan, gallery, donation page, SEO optimization, and
+                                mobile-first design.
+                            </p>
+
+                            <div class="project-card__tech">
+
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+                            <div class="project-card__buttons">
+
+                                <a href="https://github.com/devtankcodes/shreechamatkarikdham/" target="_blank"
+                                    class="btn btn--outline">
+                                    GitHub
+                                </a>
+
+                                <a href="#" target="_blank" class="btn btn--primary" rel="noopener noreferrer">
+                                    Live Demo
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+
+                        <div class="project-card__image">
+
+                            <img src="assets/images/projects/portfolio.webp" alt="Portfolio Website">
+
+                        </div>
+
+                        <div class="project-card__content">
+
+                            <h3 class="project-card__title">
+                                Personal Portfolio Website
+                            </h3>
+
+                            <p class="project-card__description">
+                                My personal portfolio showcasing projects, skills, achievements,
+                                and my journey as a Computer Engineering student.
+                            </p>
+
+                            <div class="project-card__tech">
+
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+                            <div class="project-card__buttons">
+
+                                <a href="https://github.com/devtankcodes/devtank-portfolio/" target="_blank" class="btn btn--outline" rel="noopener noreferrer">
+                                    GitHub
+                                </a>
+
+                                <a href="https://devtankcodes.github.io/devtank-portfolio/" class="btn btn--primary">
+                                    Live Demo
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+
+                        <div class="project-card__image">
+
+                            <img src="assets/images/projects/coming-soon.webp" alt="Coming Soon">
+
+                        </div>
+
+                        <div class="project-card__content">
+
+                            <h3 class="project-card__title">
+                                More Projects Coming Soon
+                            </h3>
+
+                            <p class="project-card__description">
+                                I'm continuously learning and building new projects. More exciting
+                                work will be added here as I grow as a developer.
+                            </p>
+
+                            <div class="project-card__tech">
+
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>API</span>
+
+                            </div>
+
+                            <div class="project-card__buttons">
+
+                                <a href="#" class="btn btn--outline">
+
+                                    In Progress
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Education Section -->
+        <section class="education section" id="education">
+            <div class="container">
+
+                <!-- Section Heading -->
+                <div class="section-heading">
+
+                    <p class="section-heading__subtitle">
+                        My Academic Journey
+                    </p>
+
+                    <h2 class="section-heading__title">
+                        Education
+                    </h2>
+
+                    <p class="section-heading__description">
+                        My educational journey and academic achievements that have shaped my foundation in engineering
+                        and technology.
+                    </p>
+
+                </div>
+
+                <div class="education__timeline">
+
+                    <!-- College -->
+                    <article class="education-card active">
+
+                        <div class="education-card__icon">
+                            🎓
+                        </div>
+
+                        <div class="education-card__content">
+
+                            <span class="education-card__year">
+                                2025 - Present
+                            </span>
+
+                            <h3 class="education-card__title">
+                                Bachelor of Engineering (Computer Engineering)
+                            </h3>
+
+                            <h4 class="education-card__institution">
+                                V.V.P. Engineering College, Rajkot
+                            </h4>
+
+                            <p class="education-card__description">
+                                Currently pursuing Computer Engineering under GTU with a strong focus on
+                                programming, web development, software engineering, data structures,
+                                algorithms, and modern technologies.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- HSC -->
+                    <article class="education-card">
+
+                        <div class="education-card__icon">
+                            📘
+                        </div>
+
+                        <div class="education-card__content">
+
+                            <span class="education-card__year">
+                                2023 - 2025
+                            </span>
+
+                            <h3 class="education-card__title">
+                                Higher Secondary Education (Science)
+                            </h3>
+
+                            <h4 class="education-card__institution">
+                                Gujarat Secondary & Higher Secondary Education Board
+                            </h4>
+
+                            <p class="education-card__description">
+                                Completed Class 12 (Science Stream) with
+                                <strong>91.18%</strong>.
+                                Also qualified JEE with
+                                <strong>93.11 Percentile</strong>.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- SSC -->
+                    <article class="education-card">
+
+                        <div class="education-card__icon">
+                            📗
+                        </div>
+
+                        <div class="education-card__content">
+
+                            <span class="education-card__year">
+                                2022 - 2023
+                            </span>
+
+                            <h3 class="education-card__title">
+                                Secondary School Education
+                            </h3>
+
+                            <h4 class="education-card__institution">
+                                Gujarat Secondary Education Board
+                            </h4>
+
+                            <p class="education-card__description">
+                                Completed Class 10 with
+                                <strong>99.79 Percentile</strong>,
+                                building a strong academic foundation in Mathematics and Science.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+
+                <!-- Section Heading -->
+                <div class="section-heading">
+
+                    <p class="section-heading__subtitle">
+                        Get In Touch
+                    </p>
+
+                    <h2 class="section-heading__title">
+                        Let's Connect
+                    </h2>
+
+                    <p class="section-heading__description">
+                        I'm always open to discussing new opportunities, collaborating on
+                        interesting projects, or simply connecting with fellow developers.
+                        Feel free to reach out!
+                    </p>
+
+                </div>
+
+                <div class="contact__wrapper">
+
+                    <!-- Contact Information -->
+                    <div class="contact__info">
+
+                        <article class="contact-card">
+
+                            <div class="contact-card__icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:devtank.eng@gmail.com">
+                                    devtank.eng@gmail.com
+                                </a>
+                            </div>
+
+                        </article>
+
+                        <article class="contact-card">
+
+                            <div class="contact-card__icon">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+
+                            <div>
+                                <h3>GitHub</h3>
+                                <a href="https://github.com/devtankcodes/" target="_blank" rel="noopener noreferrer">
+                                    github.com/devtankcodes/
+                                </a>
+                            </div>
+
+                        </article>
+
+                        <article class="contact-card">
+
+                            <div class="contact-card__icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <a href="https://www.linkedin.com/in/devtankengineer/" target="_blank" rel="noopener noreferrer">
+                                    linkedin.com/in/devtankengineer/
+                                </a>
+                            </div>
+
+                        </article>
+
+                        <article class="contact-card">
+
+                            <div class="contact-card__icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div>
+                                <h3>Location</h3>
+                                <p>Rajkot, Gujarat, India</p>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <!-- Call To Action -->
+                    <div class="contact__cta">
+
+                        <h3>
+                            Ready to Build Something Amazing?
+                        </h3>
+
+                        <p>
+                            Whether you have a project idea, internship opportunity,
+                            freelance work, or simply want to connect, I'd love to hear
+                            from you.
+                        </p>
+
+                        <div class="contact__buttons">
+
+                            <a href="mailto:devtank.eng@gmail.com" class="btn btn--primary">
+                                Send Email
+                            </a>
+
+                            <a href="assets/files/Dev_Tank_Resume.pdf" target="_blank" class="btn btn--secondary" rel="noopener noreferrer">
+                                Download Resume
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__content">
+
+                <!-- Brand -->
+                <div class="footer__brand">
+                    <a href="#home" class="footer__logo">
+                        Dev<span>Tank</span>
+                    </a>
+                    <p class="footer__description">
+                        Computer Engineering Student passionate about building modern,
+                        responsive, and user-friendly web experiences.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer__links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div class="footer__social">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/devtankcodes/" target="_blank" rel="noopener noreferrer">
+                                GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/devtankengineer/" target="_blank" rel="noopener noreferrer">
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:devtank.eng@gmail.com">
+                                Email
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <p>
+                    © <span id="current-year"></span> Dev Tank. All rights reserved.
+                </p>
+                <p>
+                    Designed & Developed with ❤️ using HTML, CSS & JavaScript.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Back to Top -->
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+            ↑
+        </a>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="src/assets/js/main.min.js"></script>
+
+</body>
+
+</html>

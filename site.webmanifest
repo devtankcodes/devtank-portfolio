@@ -1,0 +1,23 @@
+{
+    "name": "Dev Tank Portfolio",
+    "short_name": "DevTank",
+    "description": "Official portfolio of Dev Tank - Computer Engineering Student & Frontend Web Developer.",
+    "start_url": "/devtank-portfolio/",
+    "scope": "/devtank-portfolio/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2563eb",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "assets/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
