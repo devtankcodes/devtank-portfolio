@@ -120,7 +120,7 @@ See the [LICENSE](LICENSE) file for more details.
 
 # 🤝 Connect With Me
 
-* 💼 LinkedIn: https://linkedin.com/in/your-link
+* 💼 LinkedIn: https://linkedin.com/in/devtankengineer
 * 💻 GitHub: https://github.com/devtankcodes
 * 📧 Email: [devtank.eng@gmail.com](mailto:devtank.eng@gmail.com)
 
