@@ -220,22 +220,6 @@ revealElements.forEach(element => {
 });
 
 /* ==========================================================
-   IMAGE PARALLAX
-========================================================== */
-
-const heroImage = document.querySelector(".hero__profile-image");
-
-window.addEventListener("scroll", () => {
-
-    if (!heroImage) return;
-
-    const offset = window.scrollY * 0.08;
-
-    heroImage.style.transform = `translateY(${offset}px)`;
-
-});
-
-/* ==========================================================
    PRELOADER (Optional)
 ========================================================== */
 

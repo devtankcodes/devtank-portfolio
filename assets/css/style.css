@@ -1004,92 +1004,58 @@ section{
 ==========================================================*/
 
 .hero__image{
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
 }
 
 .hero__image-wrapper{
 
-    position:relative;
+    width:340px;
+    height:340px;
 
-    width:360px;
-
-    aspect-ratio:1;
+    border-radius:50%;
+    overflow:hidden;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
 }
 
-.hero__image-wrapper::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
+/* Hero Image Wrapper */
+.hero__image-wrapper{
+    width:380px;
+    height:380px;
 
     border-radius:50%;
+    overflow:hidden;
 
-    background:linear-gradient(
-        135deg,
-        var(--color-primary),
-        #60a5fa
-    );
-
-    transform:scale(1.02);
-
-    opacity:.12;
-
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.hero__image-wrapper::after{
-
-    content:"";
-
-    position:absolute;
-
-    inset:14px;
-
-    border:2px dashed rgba(37,99,235,.25);
-
-    border-radius:50%;
-
-}
-
+/* Profile Image */
 .hero__profile-image{
+    width:100%;
+    height:100%;
 
-    position:relative;
-
-    z-index:2;
-
-    width:300px;
-
-    height:300px;
-
-    object-fit:cover;
     border-radius:50%;
 
-    border:8px solid #fff;
+    /* Show more of the face */
+    object-fit:contain;
 
-    box-shadow:var(--shadow-lg);
+    /* Keep image centered */
+    object-position:center 10%;
 
-    transition:var(--transition);
-
+    animation:none;
+    transform:none;
+    border:none;
+    box-shadow:none;
 }
 
 .hero__profile-image:hover{
-
-    transform:translateY(-8px);
-
+    transform:none;
 }
 
 /*==========================================================
@@ -1141,77 +1107,17 @@ section{
 }
 
 @media (max-width:768px){
-
-    .hero{
-
-        min-height:auto;
-
-        padding:120px 0 5rem;
-
-    }
-
-    .hero__title{
-
-        font-size:2.8rem;
-
-    }
-
-    .hero__designation{
-
-        font-size:1.2rem;
-
-    }
-
-    .hero__description{
-
-        font-size:1rem;
-
-    }
-
     .hero__image-wrapper{
-
-        width:300px;
-
+        width:320px;
+        height:320px;
     }
-
-    .hero__profile-image{
-
-        width:250px;
-
-        height:250px;
-
-    }
-
 }
 
 @media (max-width:480px){
-
-    .hero__buttons{
-
-        flex-direction:column;
-
-    }
-
-    .hero__buttons .btn{
-
-        width:100%;
-
-    }
-
     .hero__image-wrapper{
-
         width:260px;
-
+        height:260px;
     }
-
-    .hero__profile-image{
-
-        width:220px;
-
-        height:220px;
-
-    }
-
 }
 
 /*==========================================================
@@ -2717,28 +2623,6 @@ section{
 
 }
 
-@keyframes floating{
-
-    0%{
-
-        transform:translateY(0);
-
-    }
-
-    50%{
-
-        transform:translateY(-10px);
-
-    }
-
-    100%{
-
-        transform:translateY(0);
-
-    }
-
-}
-
 /*==========================================================
     APPLY ANIMATIONS
 ==========================================================*/
@@ -2771,9 +2655,7 @@ section{
 }
 
 .hero__profile-image{
-
-    animation:floating 5s ease-in-out infinite;
-
+    animation:none;
 }
 
 /*==========================================================
